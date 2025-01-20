@@ -170,7 +170,7 @@ nav.textmenu a:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 70px 100px; /* 부모 컨테이너 위치 조정 */
+    margin: 80px 100px; /* 부모 컨테이너 위치 조정 */
 }
 
 .big-section {
@@ -179,6 +179,7 @@ nav.textmenu a:hover {
     background-color: #D9D9D9;
     border-radius: 20px;
     position: relative; /* 자식 요소의 위치 조정에 필요 */
+    margin-left: 100px;
 }
 
 .big-section h3 {
@@ -189,7 +190,7 @@ nav.textmenu a:hover {
     font-style: bold;
 }
 
-.big-section button {
+#bigbutton {
     position: absolute;
     border-radius: 50%;
     bottom: 30px; /* 버튼 위치 조정 */
@@ -215,9 +216,50 @@ nav.textmenu a:hover {
     font-size: 30px;
 }
 
+/* 전체 섹션 설정 */
 .small-section {
-    width: 500px;
-    height: 630px;
-    background-color: #D9D9D9;
+    display: grid; /* Grid 레이아웃 사용 */
+    grid-template-columns: 1fr 1fr; /* 두 개의 열로 분할 */
+    grid-template-rows: 1fr 1fr; /* 두 개의 행으로 분할 */
+    gap: 15px; /* 아이템 간격 */
+    width: 932px;
+    height: 637px; /* 화면 전체 높이 사용 */
+    margin-right: 110px;
+    box-sizing: border-box;
+}
+
+/* 개별 섹션 설정 */
+.small-section > div {
+    display: flex; /* 버튼 가운데 정렬 */
+    align-items: center;
     border-radius: 20px;
+    justify-content: center;
+    border: 1px solid #ccc; /* 테두리 추가 */
+    background-color: #f9f9f9; /* 배경색 설정 */
+}
+
+/* 버튼 설정 */
+button {
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    border-radius: 50%; /* 버튼을 원형으로 */
+    background-color: #909090; /* 버튼 배경색 */
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #909090; /* 호버 시 색상 변경 */
+    transform: scale(1.1); /* 호버 시 크기 증가 */
+}
+
+button:active {
+    background-color: #003f7f; /* 클릭 시 색상 변경 */
+    transform: scale(0.9); /* 클릭 시 크기 감소 */
 }
