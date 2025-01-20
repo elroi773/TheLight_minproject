@@ -166,58 +166,58 @@ nav.textmenu a:hover {
 }
 
 
-.big-section{
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 70px 100px; /* 부모 컨테이너 위치 조정 */
+}
+
+.big-section {
     width: 500px;
     height: 630px;
     background-color: #D9D9D9;
-    margin-top: 70px;
     border-radius: 20px;
-    margin-left: 100px;
+    position: relative; /* 자식 요소의 위치 조정에 필요 */
 }
 
-.big-section h3{
+.big-section h3 {
     font-family: 'GowunBatang-Regular';
     font-size: 40px;
     padding-top: 50px;
-    float: left;
     margin-left: 50px;
     font-style: bold;
 }
-.big-section button{
+
+.big-section button {
     position: absolute;
     border-radius: 50%;
-    float: right;
-    margin-top: 500px;
+    bottom: 30px; /* 버튼 위치 조정 */
+    right: 30px;
     width: 50px;
     height: 50px;
-    margin-left: 50px;
 }
 
-.when{
+.when {
     position: absolute;
     font-family: 'GowunBatang-Regular';
     color: #333;
     font-size: 20px;
-    float: left;
-    margin-top: 200px;
-    margin-left: 50px;
-    margin-bottom: 30px;
+    top: 200px;
+    left: 50px;
 }
 
-.big-section h4{
+.big-section h4 {
     font-family: 'GowunBatang-Regular';
     position: absolute;
-    margin-top: 150px;
-    margin-left: 50px;
+    top: 150px;
+    left: 50px;
     font-size: 30px;
 }
 
-.small-section{
-    width: 530px;
-    height: 322px;
+.small-section {
+    width: 500px;
+    height: 630px;
     background-color: #D9D9D9;
     border-radius: 20px;
-    float: right;
-    position: absolute;
 }
-
