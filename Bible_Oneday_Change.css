@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'establishRetrosansOTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MangoDdobak-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Pretendard-Regular';
+    margin: 0;
+}
+
+body {
+    text-align: center;
+}
+
+.head {
+    font-family: 'GowunBatang-Regular';
+    padding-top: 15px;
+}
+
+h1 {
+    font-family: 'establishRetrosansOTF';
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a.menu {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'establishRetrosansOTF';
+
+}
+
+nav.textmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 100px;
+    font-family: 'establishRetrosansOTF';
+}
+
+
+nav.textmenu a {
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+
+nav.textmenu span {
+    display: none;
+}
+
+a.menu:hover {
+    background-color: #333;
+    color: #faff6e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+nav.textmenu a:hover {
+    background-color: #333;
+    color: #faff6e;
+    transform: scale(1.08);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    text-align: center;
+    margin: 50px;
+    position: relative;
+    display: inline-block;
+    transform: scale(0.8);
+    opacity: 0;
+    animation: popup 0.8s ease-out forwards;
+}
+
+.container img {
+    display: block;
+    width: 75%;
+    height: auto;
+    border-radius: 76px;
+    margin: auto;
+}
+
+.wise_saying {
+    font-family: 'GowunBatang-Regular';
+    font-size: 3em;
+    margin-bottom: 70px;
+}
+
+.pwise {
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-family: 'MangoDdobak-B';
+
+}
+
+.bible {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.goback {
+    position: absolute;
+    top: 9%;
+    left: 83%;
+    width: 120px;
+    height: 120px;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    float: right;
+    margin-top: 40px;
+    background: inherit;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    overflow: visible;
+    cursor: pointer
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0.8);
+        /* 시작 시 크기를 0.8로 설정 */
+        opacity: 0;
+        /* 시작 시 투명도 0 */
+    }
+
+    100% {
+        transform: scale(1);
+        /* 애니메이션 종료 시 크기 1로 설정 */
+        opacity: 1;
+        /* 애니메이션 종료 시 투명도 1 */
+    }
+}

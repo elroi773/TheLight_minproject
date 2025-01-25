@@ -90,6 +90,8 @@ nav.textmenu a:hover {
     transition: all 0.3s ease-in-out;
 }
 
+/* 여기까지 header */
+
 .bible {
     width: 100vw;
     height: 100vh;
