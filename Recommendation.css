@@ -100,7 +100,7 @@ nav.textmenu a:hover {
 
 
 .recoment{
-    margin-top: 70px;
+    margin-top: 40px;
     color: #88A3FF;
 }
 .recoment p{
@@ -110,4 +110,43 @@ nav.textmenu a:hover {
 
 .recoment h1{
     font-family: 'JeonjuCraftMjB';
+}
+.section{
+    margin-top: 40px;
+}
+
+
+.playlist{
+    float: left;
+    margin-left: 130px;
+}
+
+.bible{
+    float: right;
+    margin-right: 130px;
+}
+
+.img{
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+}
+
+button{
+    top: 9%;
+    left: 83%;
+    width: 120px;
+    height: 120px;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    float: right;
+    margin-top: 40px;
+    background: inherit;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    overflow: visible;
+    cursor: pointer   
 }
