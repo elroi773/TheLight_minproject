@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    height: 5000px;
+}
+
+.head {
+    font-family: 'GowunBatang-Regular';
+    padding-top: 15px;
+}
+
+h1 {
+    font-family: 'establishRetrosansOTF';
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a.menu {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'establishRetrosansOTF';
+
+}
+
+nav.textmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 100px;
+    font-family: 'establishRetrosansOTF';
+}
+
+
+nav.textmenu a {
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+
+nav.textmenu span {
+    display: none;
+}
+
+a.menu:hover {
+    background-color: #333;
+    color: #faff6e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+nav.textmenu a:hover {
+    background-color: #333;
+    color: #faff6e;
+    transform: scale(1.08);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Card{
+    width: 461px;
+    height: 604px;
+}
