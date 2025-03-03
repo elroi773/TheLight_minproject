@@ -96,24 +96,31 @@ nav.textmenu a:hover {
     gap: 20px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    padding: 10px;
+    padding: 20px;
     white-space: nowrap;
     transition: all 0.3s ease-in-out;
+    justify-content: center;
+    -ms-overflow-style: none;  /* IE, Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-x: scroll;
+}
+.card-container::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari */
 }
 
 .Card {
     flex: 0 0 auto;
-    width: 400px;
-    height: 500px;
+    width: 350px; /* 기본 카드 크기 */
+    height: 450px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    scroll-snap-align: start;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform: scale(0.9); /* 기본 크기 줄이기 */
 }
 
 .Card img {
@@ -134,11 +141,17 @@ nav.textmenu a:hover {
 
 /* === Hover 효과 === */
 .Card:hover {
-    transform: scale(1.1); /* 카드 확대 */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 그림자 강조 */
-    z-index: 10; /* 다른 카드 위에 오도록 설정 */
+    transform: scale(1.2) translateX(10px); /* 확대 & 약간 오른쪽 이동 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
-.Card:hover img {
-    transform: scale(1.05); /* 이미지도 약간 확대 */
+/* === Hover되지 않은 카드들은 작게 보이도록 설정 === */
+.card-container:hover .Card {
+    transform: scale(0.85); /* hover되지 않은 카드 작게 만들기 */
+}
+
+/* === Hover된 카드만 원래 크기 유지 === */
+.card-container:hover .Card:hover {
+    transform: scale(1.2) translateX(10px);
 }
