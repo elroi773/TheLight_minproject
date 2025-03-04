@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'establishRetrosansOTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    height: 5000px;
+}
+
+.head {
+    font-family: 'GowunBatang-Regular';
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+h1 {
+    font-family: 'establishRetrosansOTF';
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a.menu {
+    display: block;
+    padding: 5px 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'establishRetrosansOTF';
+    
+
+}
+
+nav.textmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 100px;
+    font-family: 'establishRetrosansOTF';
+}
+
+
+nav.textmenu a {
+    padding: 6px 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+
+nav.textmenu span {
+    display: none;
+}
+
+a.menu:hover {
+    background-color: #333;
+    color: #faff6e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+nav.textmenu a:hover {
+    background-color: #333;
+    color: #faff6e;
+    transform: scale(1.08);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 여기까지 header */
