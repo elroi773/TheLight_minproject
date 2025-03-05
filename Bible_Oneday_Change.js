@@ -176,3 +176,7 @@ function displayDailyQuote() {
 }
 
 displayDailyQuote(); // 페이지 로드 시 말씀 표시
+
+document.querySelector(".goback").addEventListener("click", function() {
+    window.location.href = "Recommendation.html";
+});
