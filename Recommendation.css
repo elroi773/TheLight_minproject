@@ -113,28 +113,59 @@ nav.textmenu a:hover {
 .recoment h1{
     font-family: 'JeonjuCraftMjB';
 }
-.section{
+.section {
     margin-top: 40px;
+    font-family: 'JeonjuCraftMjB';
 }
 
-
-.playlist{
+.playlist {
     float: left;
     margin-left: 130px;
 }
 
-.bible{
+.bible {
     float: right;
     margin-right: 130px;
 }
 
-.img{
+/* 기존 이미지 스타일 유지 */
+.img {
     width: 500px;
     height: 500px;
     border-radius: 30px;
 }
 
-button{
+/* 이미지 위에 텍스트 올리기 */
+.playlist-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* 텍스트 스타일 */
+.playlist-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+.playlist-text p{
+    font-size: 10px;
+}
+/* hover 효과 */
+.playlist-container:hover .playlist-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* 버튼 스타일 유지 */
+button {
     top: 9%;
     left: 83%;
     width: 120px;
@@ -150,6 +181,5 @@ button{
     border-radius: 0;
     padding: 0;
     overflow: visible;
-    cursor: pointer   
+    cursor: pointer;
 }
-
