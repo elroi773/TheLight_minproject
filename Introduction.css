@@ -12,13 +12,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 * {
     margin: 0;
 }
 
 body {
     text-align: center;
-    height: 5000px;
+    height: 1800px;
 }
 
 .head {
@@ -111,6 +118,7 @@ nav.textmenu a:hover {
     justify-content: center; /* 가로 정렬 */
     gap: 20px; /* 카드 간 간격 */
     flex-wrap: wrap; /* 줄바꿈 허용 */
+    font-family: 'Pretendard-Regular';
 }
 
 .container {
